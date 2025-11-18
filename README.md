@@ -111,7 +111,7 @@ MVPリリース時点では個人で写真+メッセージからストーリー�
 デプロイ先：Render
 ユーザー認証機能：Devise
 AIストーリー生成機能：OpenAI API(gpt-4o or gpt-4o mini)
-ストレージ管理：ActiveStorage
+ストレージ管理機能：ActiveStorage
 外部ストレージサービス：AWS S3
 
 ## 画面遷移図
