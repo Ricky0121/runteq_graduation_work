@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: runteq_graduation_work_production
-  username: runteq_graduation_work
-  password: <%= ENV["RUNTEQ_GRADUATION_WORK_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
