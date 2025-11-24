@@ -1,0 +1,25 @@
+plugins:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-erb
+
+inherit_from:
+  - .rubocop_todo.yml
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2.9
+  TargetRailsVersion: 7.1.6
+  Exclude:
+    - "bin/**/*"
+    - "db/schema.rb"
+    - "db/migrate/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+    - "tmp/**/*"
+
+Layout/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
