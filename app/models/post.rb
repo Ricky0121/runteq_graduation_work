@@ -3,7 +3,7 @@ class Post < ApplicationRecord
 
   has_many :photos, dependent: :destroy
 
-  enum status: { published: 0, draft: 1 }
+  enum status: { published: 0, draft: 1 }, _default: :published
 
   validates :message, presence: true, length: { maximum: 500 }
   validates :image_url, presence: true

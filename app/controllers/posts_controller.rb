@@ -17,9 +17,8 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to @post, notice: "投稿を作成しました。"
     else
-      Rails.logger.debug "POST_SAVE_ERRORS: #{@post.errors.full_messages.inspect}"
       flash.now[:alert] = "投稿に失敗しました。入力内容を確認してください。"
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
